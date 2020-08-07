@@ -23,6 +23,13 @@
 			remoteGlobalIDString = 04A6226D24DD18C400365AF2;
 			remoteInfo = RPN;
 		};
+		04A622A524DD319100365AF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04A6229F24DD2FC400365AF2 /* RPN.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 04A6226C24DD18C400365AF2;
+			remoteInfo = RPN;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -109,6 +116,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				04A622A624DD319100365AF2 /* PBXTargetDependency */,
 			);
 			name = Calculator;
 			productName = Calculator;
@@ -189,6 +197,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04A622A624DD319100365AF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RPN;
+			targetProxy = 04A622A524DD319100365AF2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		04A6229024DD2EE700365AF2 /* Main.storyboard */ = {
