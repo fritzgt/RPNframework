@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		04A6227224DD18C400365AF2 /* RPN.h in Headers */ = {isa = PBXBuildFile; fileRef = 04A6227024DD18C400365AF2 /* RPN.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		04A6227924DD197400365AF2 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A6227824DD197400365AF2 /* Stack.swift */; };
+		04A6227B24DD1E0200365AF2 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A6227A24DD1E0200365AF2 /* Calculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +17,7 @@
 		04A6227024DD18C400365AF2 /* RPN.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RPN.h; sourceTree = "<group>"; };
 		04A6227124DD18C400365AF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04A6227824DD197400365AF2 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		04A6227A24DD1E0200365AF2 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +52,7 @@
 			children = (
 				04A6227024DD18C400365AF2 /* RPN.h */,
 				04A6227824DD197400365AF2 /* Stack.swift */,
+				04A6227A24DD1E0200365AF2 /* Calculator.swift */,
 				04A6227124DD18C400365AF2 /* Info.plist */,
 			);
 			path = RPN;
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04A6227924DD197400365AF2 /* Stack.swift in Sources */,
+				04A6227B24DD1E0200365AF2 /* Calculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
