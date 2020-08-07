@@ -8,16 +8,16 @@
 
 import Foundation
 
+public enum DigitAccumulatorError: Error {
+    case invalidNumberValue
+    case extraDecialPoint
+}
 
-struct DigitAccumulator {
+public struct DigitAccumulator {
     
     //MARK: - Enums
-    enum DigitAccumulatorError: Error {
-        case invalidNumberValue
-        case extraDecialPoint
-    }
     
-    enum Digit: Equatable {
+    public enum Digit: Equatable {
         case decimalPoint
         case number(Int)
     }
@@ -28,7 +28,7 @@ struct DigitAccumulator {
     
     //MARK: - Methods
     
-    mutating func add(digit: Digit) throws {//Use to indicate that it can throw and error if something goes wrong
+    public mutating func add(digit: Digit) throws {//Use to indicate that it can throw and error if something goes wrong
         switch digit {
         case .number(let value):
             if value < 0 || value > 9{//If the value is not between 0-9
@@ -43,11 +43,11 @@ struct DigitAccumulator {
     }
     
 
-    mutating func clear() {
+    public mutating func clear() {
         digits.removeAll()
     }
     
-    func value() -> Double? {
+    public func value() -> Double? {
         let string = digits.map { (digit) -> String in //Mutates each digit into a string
             switch digit {
             case .decimalPoint:

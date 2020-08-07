@@ -8,9 +8,9 @@
 
 import Foundation
 
-struct Calculator {
+public struct Calculator {
     
-    enum Operator {
+    public enum Operator {
         case add
         case subtract
         case multiply
@@ -19,16 +19,16 @@ struct Calculator {
     
     private var stack: Stack<Double> = [0.0,0.0]//Init an array with double type
     
-    init() {
+    public init() {
         
     }
     
     //Adds a number to the stack
-    mutating func push(_ number: Double){
+    public mutating func push(_ number: Double){
         stack.push(number)
     }
     
-    mutating func push(operator: Operator){
+    public mutating func push(operator: Operator){
         
         let operand2 = stack.pop() ?? 0.0//removes the last num on the stack and saves it to the variable
         let operand1 = stack.pop() ?? 0.0//removes and save the element on the button of the stack
